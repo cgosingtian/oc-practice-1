@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <math.h>
 
 double addTwoFloats(float a, float b)
 {
@@ -16,6 +17,11 @@ double addTwoFloats(float a, float b)
 void printTwoStrings(char *string1, char *string2)
 {
     printf("Printing %s and %s.\n", string1, string2);
+}
+
+void printSin(float radian)
+{
+    printf("Sin of %f is %.3f\n",radian,sinf(radian));
 }
 
 int main(int argc, const char * argv[])
@@ -32,6 +38,7 @@ int main(int argc, const char * argv[])
     printf("Used a function to add the two floats %f and %f to get %f\n", fItemOne, fItemTwo, addTwoFloats(fItemOne,fItemTwo));
     
     printTwoStrings("A", "B");
+    printSin(1.0);
     
     return 0;
 }
