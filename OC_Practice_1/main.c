@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 double addTwoFloats(float a, float b)
@@ -30,11 +31,11 @@ void update (int *address, int value)
     printf("New value is %d\n", *address);
 }
 
-struct Person
+typedef struct
 {
     int age;
     char *name;
-};
+} Person;
 
 int main(int argc, const char * argv[])
 {
@@ -64,11 +65,17 @@ int main(int argc, const char * argv[])
     update(&item, 25);
     printf("Verifying new value as %d\n",item);
     
-    struct Person p;
+    Person p;
     p.age = 29;
     p.name = "Chase";
     
     printf("%s is %d years old.\n", p.name,p.age);
+    
+    Person *newP = malloc(sizeof(Person));
+    newP->age = 5;
+    newP->name = "Baby";
+    
+    printf("%s is %d years old.\n", newP->name,newP->age);
     
     return 0;
 }
