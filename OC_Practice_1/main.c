@@ -37,7 +37,7 @@ typedef struct
     char *name;
 } Person;
 
-int main(int argc, const char * argv[])
+void chapter1Report()
 {
     int num_turkeys = 2;
     float weight = 5.0;
@@ -52,7 +52,7 @@ int main(int argc, const char * argv[])
     
     printTwoStrings("A", "B");
     printSin(1.0);
-
+    
     printf("Size of a float is %lu\n", sizeof(float));
     
     int item = 10;
@@ -76,6 +76,10 @@ int main(int argc, const char * argv[])
     newP->name = "Baby";
     
     printf("%s is %d years old.\n", newP->name,newP->age);
-    
+}
+
+int main(int argc, const char * argv[])
+{
+    chapter1Report();
     return 0;
 }

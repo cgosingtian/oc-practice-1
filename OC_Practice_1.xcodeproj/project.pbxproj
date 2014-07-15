@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F249C601975151700BDE259 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F249C5F1975151700BDE259 /* Student.m */; };
 		4FF24D7D1974D110003A768B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FF24D7C1974D110003A768B /* main.c */; };
 		4FF24D7F1974D110003A768B /* OC_Practice_1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FF24D7E1974D110003A768B /* OC_Practice_1.1 */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4F249C5E1975151700BDE259 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		4F249C5F1975151700BDE259 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		4FF24D791974D110003A768B /* OC_Practice_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OC_Practice_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF24D7C1974D110003A768B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4FF24D7E1974D110003A768B /* OC_Practice_1.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OC_Practice_1.1; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 			children = (
 				4FF24D7C1974D110003A768B /* main.c */,
 				4FF24D7E1974D110003A768B /* OC_Practice_1.1 */,
+				4F249C5E1975151700BDE259 /* Student.h */,
+				4F249C5F1975151700BDE259 /* Student.m */,
 			);
 			path = OC_Practice_1;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FF24D7D1974D110003A768B /* main.c in Sources */,
+				4F249C601975151700BDE259 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +233,7 @@
 				4FF24D841974D110003A768B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
