@@ -22,3 +22,4 @@ int main(int argc, const char * argv[])
 }
 
 //blah
+//test source tree detection
