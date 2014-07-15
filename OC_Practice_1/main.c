@@ -13,9 +13,13 @@ double addTwoFloats(float a, float b)
     return a+b;
 }
 
+void printTwoStrings(char *string1, char *string2)
+{
+    printf("Printing %s and %s.\n", string1, string2);
+}
+
 int main(int argc, const char * argv[])
 {
-
     int num_turkeys = 2;
     float weight = 5.0;
     float fItemOne = 3.14;
@@ -26,6 +30,8 @@ int main(int argc, const char * argv[])
     printf("The cooked turkey now weighs %f.\n", 0.25 * weight);
     
     printf("Used a function to add the two floats %f and %f to get %f\n", fItemOne, fItemTwo, addTwoFloats(fItemOne,fItemTwo));
+    
+    printTwoStrings("A", "B");
     
     return 0;
 }
