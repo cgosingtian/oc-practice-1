@@ -16,6 +16,7 @@ int main(int argc, const char * argv[])
     printf("Second message!\n");
     
     printf("Third message!\n");
+    printf("Fourth message!\n");
     
     return 0;
 }
