@@ -11,15 +11,12 @@
 int main(int argc, const char * argv[])
 {
 
-    // Just some random messages
-    printf("New message!\n");
-    printf("Second message!\n");
+    int num_turkeys = 2;
+    float weight = 5.0;
+    // Lets cook a turkey
+    printf("The turkey's weight is %f. We have %d turkeys.", weight, num_turkeys);
     
-    printf("Third message!\n");
-    printf("Fourth message!\n");
+    printf("The cooked turkey now weighs %f.", 0.25 * weight);
     
     return 0;
 }
-
-//blah
-//test source tree detection
