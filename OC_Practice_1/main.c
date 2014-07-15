@@ -11,8 +11,10 @@
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    printf("Hello, World!\n");
+    // Just some random messages
+    printf("New message!\n");
+    printf("Second message!\n");
+    
     return 0;
 }
 
