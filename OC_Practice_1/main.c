@@ -40,5 +40,7 @@ int main(int argc, const char * argv[])
     printTwoStrings("A", "B");
     printSin(1.0);
     
+    printf("Size of a float is %lu\n", sizeof(float));
+    
     return 0;
 }
