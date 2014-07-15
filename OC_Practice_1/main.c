@@ -24,6 +24,18 @@ void printSin(float radian)
     printf("Sin of %f is %.3f\n",radian,sinf(radian));
 }
 
+void update (int *address, int value)
+{
+    *address = value;
+    printf("New value is %d\n", *address);
+}
+
+struct Person
+{
+    int age;
+    char *name;
+};
+
 int main(int argc, const char * argv[])
 {
     int num_turkeys = 2;
@@ -39,8 +51,24 @@ int main(int argc, const char * argv[])
     
     printTwoStrings("A", "B");
     printSin(1.0);
-    
+
     printf("Size of a float is %lu\n", sizeof(float));
+    
+    int item = 10;
+    int *addressOfItem = &item;
+    int newItem = 15;
+    
+    printf("Old value is %d\n",item);
+    update(addressOfItem, newItem);
+    printf("Verifying new value as %d\n",item);
+    update(&item, 25);
+    printf("Verifying new value as %d\n",item);
+    
+    struct Person p;
+    p.age = 29;
+    p.name = "Chase";
+    
+    printf("%s is %d years old.\n", p.name,p.age);
     
     return 0;
 }
